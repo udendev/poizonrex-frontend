@@ -92,10 +92,10 @@ function addHandlersCategory() {
             category.classList.add('active');
 
             const categoryId = e.target.getAttribute('data-id');
-            let url = 'https://poizonrex.ru:8080/api/product?categoryId=' + categoryId;
+            let url = 'http://poizonrex.ru:8080/api/product?categoryId=' + categoryId;
 
             if (categoryId == 'all') {
-                url = 'https://poizonrex.ru:8080/api/product/';
+                url = 'http://poizonrex.ru:8080/api/product/';
             }
 
             fetch(url, {
@@ -121,7 +121,7 @@ function addHandlersCategory() {
     });
 }
 
-fetch('https://poizonrex.ru:8080/api/product/', {
+fetch('http://poizonrex.ru:8080/api/product/', {
     headers: {
         'Content-Type': 'application/json',
     },
