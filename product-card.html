@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1 user-scalable=no" />
+
+        <title>Poizon Rex</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="bottom-nav">
+            <div class="container">
+                <div class="addtocart-container">
+                    <button class="addtocart-btn">Добавить в корзину</button>
+                </div>
+                <div class="tab-box">
+                    <button class="tab-btn active">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M7.69999 17.4H17.3M11.7582 2.62527L3.4382 8.25179C3.10054 8.48014 2.89999 8.84979 2.89999 9.24381V19.7741C2.89999 20.7825 3.75961 21.6 4.81999 21.6H20.18C21.2404 21.6 22.1 20.7825 22.1 19.7741V9.24381C22.1 8.84979 21.8994 8.48014 21.5618 8.25179L13.2418 2.62527C12.7977 2.32494 12.2023 2.32494 11.7582 2.62527Z"
+                                stroke="black"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        Главная
+                    </button>
+                    <button class="tab-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 26 22"
+                            fill="none"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M9.90857 19.4032C9.90702 20.22 9.24389 20.881 8.42711 20.8799C7.61032 20.8789 6.94888 20.2162 6.9494 19.3994C6.94992 18.5826 7.6122 17.9208 8.42899 17.9208C8.82177 17.9212 9.19832 18.0775 9.4758 18.3555C9.75327 18.6336 9.90895 19.0104 9.90857 19.4032V19.4032Z"
+                                stroke="#8E8E8E"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M17.7994 19.4032C17.7978 20.22 17.1347 20.881 16.3179 20.8799C15.5011 20.8789 14.8397 20.2162 14.8402 19.3994C14.8407 18.5826 15.503 17.9208 16.3198 17.9208C16.7126 17.9212 17.0891 18.0775 17.3666 18.3555C17.6441 18.6336 17.7998 19.0104 17.7994 19.4032V19.4032Z"
+                                stroke="#8E8E8E"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M23.191 5.07324H8.92175L7.93347 12.9794C7.93347 14.0711 8.8184 14.956 9.91002 14.956L20.9321 13.8265C21.6262 13.8262 22.2693 13.4618 22.6263 12.8665L24.8852 8.0663C25.2513 7.45581 25.2608 6.69563 24.9102 6.07615C24.5595 5.45666 23.9029 5.07358 23.191 5.07324Z"
+                                stroke="#8E8E8E"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M5.21011 7.36068C5.62432 7.36068 5.96011 7.02489 5.96011 6.61068C5.96011 6.19646 5.62432 5.86068 5.21011 5.86068V7.36068ZM1.16666 5.86068C0.752443 5.86068 0.416656 6.19646 0.416656 6.61068C0.416656 7.02489 0.752443 7.36068 1.16666 7.36068V5.86068ZM5.21004 10.6545C5.62425 10.6545 5.96004 10.3187 5.96004 9.90446C5.96004 9.49025 5.62425 9.15446 5.21004 9.15446V10.6545ZM3.89422 9.15446C3.48001 9.15446 3.14422 9.49025 3.14422 9.90446C3.14422 10.3187 3.48001 10.6545 3.89422 10.6545V9.15446ZM8.19408 5.25467C8.29433 5.65657 8.7014 5.90111 9.1033 5.80086C9.5052 5.70061 9.74974 5.29354 9.64949 4.89164L8.19408 5.25467ZM7.97728 1.28665L8.70499 1.10513L8.70377 1.10036L7.97728 1.28665ZM7.76127 1.12006V1.87007L7.76566 1.87005L7.76127 1.12006ZM3.9903 0.37006C3.57608 0.37006 3.2403 0.705846 3.2403 1.12006C3.2403 1.53427 3.57608 1.87006 3.9903 1.87006V0.37006ZM5.21011 5.86068H1.16666V7.36068H5.21011V5.86068ZM5.21004 9.15446H3.89422V10.6545H5.21004V9.15446ZM9.64949 4.89164L8.70498 1.10514L7.24957 1.46817L8.19408 5.25467L9.64949 4.89164ZM8.70377 1.10036C8.59304 0.668537 8.20266 0.367459 7.75687 0.370073L7.76566 1.87005C7.52326 1.87147 7.31099 1.70775 7.25078 1.47295L8.70377 1.10036ZM7.76127 0.37006H3.9903V1.87006H7.76127V0.37006Z"
+                                fill="#8E8E8E"
+                            />
+                        </svg>
+                        Корзина
+                    </button>
+                    <button class="tab-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 22"
+                            fill="none"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M11.8349 21.2092L7.24074 16.494L2.68275 11.7789C0.216833 9.17294 0.216833 5.09435 2.68275 2.48843C3.89021 1.32797 5.52566 0.721541 7.19779 0.814239C8.86993 0.906937 10.4283 1.69042 11.5001 2.97723L11.8349 3.30572L12.1665 2.96309C13.2383 1.67627 14.7967 0.892791 16.4688 0.800093C18.141 0.707396 19.7764 1.31382 20.9839 2.47428C23.4498 5.08021 23.4498 9.1588 20.9839 11.7647L16.4259 16.4799L11.8349 21.2092Z"
+                                stroke="#8E8E8E"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                        Избранное
+                    </button>
+                    <button class="tab-btn">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                        >
+                            <path
+                                d="M3.73773 19.5C5.06314 17.2892 7.96801 15.7762 12.5 15.7762C17.032 15.7762 19.9369 17.2892 21.2623 19.5M16.1 8.1C16.1 10.0882 14.4882 11.7 12.5 11.7C10.5118 11.7 8.90001 10.0882 8.90001 8.1C8.90001 6.11177 10.5118 4.5 12.5 4.5C14.4882 4.5 16.1 6.11177 16.1 8.1Z"
+                                stroke="#8E8E8E"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                            />
+                        </svg>
+                        Профиль
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="container">
+                <div class="product-card-img-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="images"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-props">
+                <div class="product-card-props-row">
+                    <div class="product-card-pricing">
+                        <span class="product-card-pricing-current">
+                            <span id="discount"></span> ₽
+                        </span>
+                        <span class="product-card-pricing-old">
+                            <img src="assets/img/oldPriceLine.svg" alt="" class="old-price-line" />
+                            <span id="price"></span> ₽
+                        </span>
+                    </div>
+                    <div class="product-card-buttons">
+                        <button class="product-like">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="22"
+                                height="22"
+                                viewBox="0 0 24 23"
+                                fill="none"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M11.7269 21.5L7.22692 16.8814L2.76232 12.2629C0.346926 9.71037 0.346926 5.71534 2.76232 3.16281C3.94504 2.02613 5.54698 1.43213 7.18485 1.52293C8.82272 1.61373 10.3492 2.38115 11.399 3.6416L11.7269 3.96336L12.0518 3.62775C13.1016 2.3673 14.6281 1.59987 16.2659 1.50907C17.9038 1.41827 19.5057 2.01227 20.6885 3.14896C23.1039 5.70149 23.1039 9.69651 20.6885 12.249L16.2239 16.8676L11.7269 21.5Z"
+                                    stroke="url(#paint0_linear_438_531)"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                                <defs>
+                                    <linearGradient
+                                        id="paint0_linear_438_531"
+                                        x1="0.950775"
+                                        y1="11.5"
+                                        x2="22.5"
+                                        y2="11.5"
+                                        gradientUnits="userSpaceOnUse"
+                                    >
+                                        <stop stop-color="#EA1A8A" />
+                                        <stop offset="1" stop-color="#B20000" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </button>
+                        <button class="share-btn">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="21"
+                                height="21"
+                                viewBox="0 0 21 21"
+                                fill="none"
+                            >
+                                <path
+                                    d="M10.4999 1.75041C10.9141 1.75041 11.2499 1.41462 11.2499 1.00041C11.2499 0.586194 10.9141 0.250407 10.4999 0.250407V1.75041ZM20.7498 10.5003C20.7498 10.0861 20.414 9.75032 19.9998 9.75032C19.5856 9.75032 19.2498 10.0861 19.2498 10.5003H20.7498ZM20.0001 1.75022C20.4143 1.75022 20.7501 1.41443 20.7501 1.00022C20.7501 0.586005 20.4143 0.250219 20.0001 0.250219V1.75022ZM14.4521 0.250219C14.0379 0.250219 13.7021 0.586005 13.7021 1.00022C13.7021 1.41443 14.0379 1.75022 14.4521 1.75022V0.250219ZM20.7499 1.00041C20.7499 0.586194 20.4141 0.250407 19.9999 0.250407C19.5857 0.250407 19.2499 0.586194 19.2499 1.00041H20.7499ZM19.2499 6.62029C19.2499 7.0345 19.5857 7.37029 19.9999 7.37029C20.4141 7.37029 20.7499 7.0345 20.7499 6.62029H19.2499ZM20.5302 1.53074C20.8231 1.23784 20.8231 0.76297 20.5302 0.470077C20.2374 0.177184 19.7625 0.177184 19.4696 0.470077L20.5302 1.53074ZM9.96967 9.96999C9.67678 10.2629 9.67678 10.7378 9.96967 11.0307C10.2626 11.3235 10.7374 11.3235 11.0303 11.0307L9.96967 9.96999ZM10.4999 0.250407H6.42852V1.75041H10.4999V0.250407ZM6.42852 0.250407C3.01622 0.250407 0.25 3.01663 0.25 6.42893H1.75C1.75 3.84505 3.84465 1.75041 6.42852 1.75041V0.250407ZM0.25 6.42893V14.5717H1.75V6.42893H0.25ZM0.25 14.5717C0.25 17.984 3.01622 20.7502 6.42852 20.7502V19.2502C3.84465 19.2502 1.75 17.1556 1.75 14.5717H0.25ZM6.42852 20.7502H14.5713V19.2502H6.42852V20.7502ZM14.5713 20.7502C17.9836 20.7502 20.7498 17.984 20.7498 14.5717H19.2498C19.2498 17.1556 17.1552 19.2502 14.5713 19.2502V20.7502ZM20.7498 14.5717V10.5003H19.2498V14.5717H20.7498ZM20.0001 0.250219H14.4521V1.75022H20.0001V0.250219ZM19.2499 1.00041V6.62029H20.7499V1.00041H19.2499ZM19.4696 0.470077L9.96967 9.96999L11.0303 11.0307L20.5302 1.53074L19.4696 0.470077Z"
+                                    fill="#8E8E8E"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="product-card-name" id="title"></h3>
+            </div>
+            <div class="sizes">
+                <div class="container">
+                    <div class="size-info">
+                        <span class="size-info-heading"> Размер </span>
+                        <button class="size-grid">Размерная сетка</button>
+                    </div>
+                    <div class="size-list">
+                        <div class="scrollable-tabs-container">
+                            <ul>
+                                <li class="scrollable-tabs-btn">36</li>
+                                <li class="scrollable-tabs-btn">36,5</li>
+                                <li class="scrollable-tabs-btn active">37</li>
+                                <li class="scrollable-tabs-btn">37,5</li>
+                                <li class="scrollable-tabs-btn">38</li>
+                                <li class="scrollable-tabs-btn disabled">38,5</li>
+                                <li class="scrollable-tabs-btn">39</li>
+                                <li class="scrollable-tabs-btn">40</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card-about">
+                <div class="container">
+                    <div class="heading-row">
+                        <span class="about-heading"> О товаре </span>
+                        <button class="about-full-btn">
+                            <span class="about-full-btn-text"> Смотреть все </span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="17"
+                                height="11"
+                                viewBox="0 0 17 11"
+                                fill="none"
+                            >
+                                <path
+                                    d="M1.32275 5.5H16M16 5.5L11.19 0.689972M16 5.5L11.19 10.31"
+                                    stroke="black"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="about-row">
+                        <span class="about-value">
+                            Материал верха: <span id="material"></span>
+                        </span>
+                        <span class="about-value"> Стелька: <span id="insole"></span> </span>
+                        <span class="about-value"> Сезон: <span id="season"></span> </span>
+                        <span class="about-value">
+                            Страна производства: <span id="country"></span>
+                        </span>
+                        <div class="about-more" id="aboutMore">
+                            <span class="about-value"> Иной элемент </span>
+                            <span class="about-value"> Другое свойство </span>
+                            <span class="about-value"> Ещё текст </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="section-accordion">
+                <div class="accordion-item">
+                    <button class="accordion">Доставка</button>
+                    <div class="accordion-content">
+                        <p>
+                            Среднее время доставки 21 день. После оплаты вы сможете отслеживать
+                            статус доставки в профиле
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion">Страховка и безопасность</button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti
+                            molestias necessitatibus quaerat quos incidunt! Quas officiis repellat
+                            dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae!
+                            Animi, sapiente, nostrum?
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion">Гарантия оригинала</button>
+                    <div class="accordion-content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti
+                            molestias necessitatibus quaerat quos incidunt! Quas officiis repellat
+                            dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae!
+                            Animi, sapiente, nostrum?
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="menu-placeholder" style="height: 130px"></div>
+        <script>
+            let params = new URLSearchParams(document.location.search);
+            let id = params.get('id'); // is the string "Jonathan"
+
+            const title = document.getElementById('title');
+
+            const imagesContainer = document.getElementById('images');
+            const price = document.getElementById('price');
+            const discount = document.getElementById('discount');
+
+            const material = document.getElementById('material');
+            const insole = document.getElementById('insole');
+            const season = document.getElementById('season');
+            const country = document.getElementById('country');
+
+            fetch('http://poizonrex.ru:8080/api/product/' + id, {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then((data) => data.json())
+                .then((product) => {
+                    title.innerHTML = product.title;
+                    price.innerHTML = product.price;
+                    console.log(product.price);
+                    discount.innerHTML = product.price - (product.price / 100) * product.discount;
+                    createImages(imagesContainer, product.images);
+
+                    material.innerHTML = product.material;
+                    insole.innerHTML = product.insole;
+                    season.innerHTML = product.season;
+                    country.innerHTML = product.country;
+                });
+
+            function createImages(container, images) {
+                images.forEach((image) => {
+                    container.insertAdjacentHTML('beforeEnd', createImageTemplate(image));
+                });
+            }
+            function createImageTemplate(image) {
+                return `
+              <div class="swiper-slide">
+                <img src="${image}" alt="product" />
+            </div>`;
+            }
+        </script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.js"
+            integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+    </body>
+</html>
