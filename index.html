@@ -159,7 +159,6 @@
                                 id=""
                                 placeholder="Хэй, поищем что-нибудь?"
                                 class="search-input"
-                                id="myhelper"
                             />
 
                             <button class="sort-btn" id="sortBtn">
@@ -219,7 +218,7 @@
                         <div class="rexfind-card">
                             <div class="text-container">
                                 <h2 class="rexfind-heading">Rex найдёт</h2>
-                                <span class="rexfind-description">
+                                <span class="rexfind-description" id="myhelper">
                                     любой товар по ссылке из Poizon
                                 </span>
                             </div>
@@ -270,7 +269,7 @@
             const tg = window.Telegram.WebApp;
             const myhelperElement = document.getElementById('myhelper');
 
-            myhelperElement.value = tg.initData;
+            myhelperElement.innerHTML = tg.initData;
 
             fetch('https://poizonrex.ru/api/category', {
                 headers: {
