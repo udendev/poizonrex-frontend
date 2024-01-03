@@ -127,7 +127,7 @@
                                 class="rex-helper-logo"
                             />
                             <div class="text-container">
-                                <span class="rex-helper-heading" id="myhelper"> Мой помощник </span>
+                                <span class="rex-helper-heading"> Мой помощник </span>
                                 <span class="rex-helper-description"> всегда на связи </span>
                             </div>
                         </div>
@@ -209,7 +209,7 @@
                             <ul>
                                 <li>Знакомьтесь, Poizon!</li>
                                 <li>Что умеет Rex?</li>
-                                <li>FAQ</li>
+                                <li id="myhelper">FAQ</li>
                                 <li>Знакомьтесь, Poizon!</li>
                             </ul>
                         </div>
@@ -269,7 +269,7 @@
             const tg = window.Telegram.WebApp;
             const myhelperElement = document.getElementById('myhelper');
 
-            myhelperElement.innerHTML(tg.initData);
+            myhelperElement.innerHTML = tg.initData;
 
             fetch('https://poizonrex.ru/api/category', {
                 headers: {
