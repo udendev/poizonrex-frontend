@@ -218,7 +218,7 @@
                         <div class="rexfind-card">
                             <div class="text-container">
                                 <h2 class="rexfind-heading">Rex найдёт</h2>
-                                <span class="rexfind-description" id="myhelper">
+                                <span class="rexfind-description">
                                     любой товар по ссылке из Poizon
                                 </span>
                             </div>
@@ -266,10 +266,6 @@
         <div class="menu-placeholder"></div>
         <script>
             const categoriesContainer = document.getElementById('categories');
-            const tg = window.Telegram.WebApp;
-            const myhelperElement = document.getElementById('myhelper');
-
-            myhelperElement.innerHTML = tg.initData;
 
             fetch('https://poizonrex.ru/api/category', {
                 headers: {
